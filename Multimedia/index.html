@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <title>Reproductor</title>
+
+       
+        <style>
+            @import url("index.css");
+        </style>
+    </head>
+    <body>
+        
+        
+
+        <div id="contenedor">
+
+
+            <div class="video">
+
+                <div class="anuncio">
+                    <div class="cruz ocultarAnuncio">X</div>
+
+                    <p>Podrás cerrar éste anuncio en <div class="cuentaAtras">10</div> segundos.</p>
+                </div>
+
+                
+
+                <video class="reproduciendo">
+                    <source src="videos/nerfThis.mp4" type="video/mp4">
+                </video>
+
+                <progress class="barra"></progress>
+                <div class="controles">
+                    <button class="botonControl reiniciar"></button>
+                    <button class="botonControl retroceder"></button>
+                    <button class="botonControl play playy"></button>
+                    <button class="botonControl avanzar"></button>
+                    <button class="botonControl silenciar"></button>
+                    <button class="botonControl bajarVol"></button>
+                    <button class="botonControl subirVol"></button>
+                </div>
+            </div>
+
+            <div class="panelLateral">
+
+                <div class="videos">
+                    <video class="lateral">
+                        <source src="videos/minute.mp4" type="video/mp4">      
+                    </video>
+                </div>
+                <div class="videos">
+                    <video class="lateral">
+                        <source src="videos/jedi.mp4" type="video/mp4">      
+                    </video>
+                </div>
+                <div class="videos">
+                    <video class="lateral">
+                        <source src="videos/what.mp4" type="video/mp4">      
+                    </video>
+                </div>
+                <div class="videos">
+                    <video class="lateral">
+                        <source src="videos/abuelo.mp4" type="video/mp4">      
+                    </video>
+                </div>
+                <div class="videos">
+                    <video class="lateral">
+                        <source src="videos/donald.mp4" type="video/mp4">      
+                    </video>
+                </div>
+                <div class="videos">
+                    <video class="lateral">
+                        <source src="videos/nerfThis.mp4" type="video/mp4">      
+                    </video>
+                </div>
+            </div>
+
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

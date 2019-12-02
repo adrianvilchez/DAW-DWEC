@@ -1,0 +1,194 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#contenedor {
+
+    width: 100%;
+    height: 100vh;
+
+
+    display: grid;
+
+    grid-template-columns: 3fr 1fr;
+
+    background-image: url("https://picsum.photos/1600/900");
+    background-color: bisque;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+
+.video {
+    margin: 0 auto;
+
+    margin-top: 5%;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 25fr 1fr 2fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+    width: 50%;
+    height: 50vh;
+
+    
+}
+
+
+.reproduciendo {
+
+    width: 100%;
+    height: 45vh;
+
+    align-self: center;
+    margin: auto;
+
+    border-radius: 5px 5px 0px 0px;
+
+    /* background-color: black; */
+    object-fit: fill;
+}
+
+
+
+.barra {
+
+    width: 100%;
+    height: 100%;
+
+    background-color: cadetblue;
+
+    -webkit-appearance: none;
+
+}
+
+.controles {
+    display: grid;
+
+    grid-template-columns: repeat(7, 1fr);
+
+    width: 100%;
+    height: auto;
+    background-color: grey;
+
+    justify-items: center;
+
+    border-radius: 0px 0px 5px 5px;
+}
+
+.botonControl {
+    width: 30%;
+    height: auto;
+    
+    background-color: pink;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border: 1px solid black;
+}
+
+.panelLateral {
+
+    overflow-y: hidden;
+
+    display: grid;
+    grid-row-gap: 1px;
+
+    grid-template-rows: 1fr;
+
+    margin-right: 5%;
+}
+
+.panelLateral:hover {
+    overflow-y: scroll;
+}
+
+.videos {
+    width: 100%;
+    height: 30vh;
+    /* border: 1px solid black; */
+
+}
+
+.lateral {
+    width: 100%;
+    height: 100%;
+}
+
+.silenciar {
+    background-image: url("imagenes/mute.svg");
+}
+
+.retroceder {
+    background-image: url("imagenes/retroceder.svg");
+}
+
+.play {
+    background-image: url("imagenes/play.svg");
+}
+
+.pausar {
+    background-image: url("imagenes/pause.svg");
+}
+
+.playar {
+    background-image: url("imagenes/play.svg");
+}
+
+.avanzar {
+    background-image: url("imagenes/avanzar.svg");
+}
+
+.bajarVol {
+    background-image: url("imagenes/bajarVol.svg");
+}
+
+.subirVol {
+    background-image: url("imagenes/subirVol.svg");
+}
+
+.reiniciar {
+    background-image: url("imagenes/replay.svg");
+}
+
+.ocultarAnuncio {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.anuncio {
+    visibility: visible;
+
+    background-image: url("https://picsum.photos/1600/900");
+    position: fixed;
+
+    width: 25%;
+    height: 30%;
+
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+
+    align-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.verAnuncio p {
+    margin-top: 10%;
+    text-align: justify;
+}
+
+.cruz {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+
+    border: 1px solid red;
+    color: red;
+
+    text-align: center;
+    user-select: none;
+}
